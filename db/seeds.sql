@@ -44,7 +44,7 @@ INSERT INTO
         role_id,
         manager_id
     )
-VALUES ("Alex", "Horning", 13, 1), ("Derek", "Chilson", 6, 1), ("Tamy", "Wilson", 9, 1), ("James", "Kennedy", 1, 1), ("Lizzy", "Nelson", 11, 1);
+VALUES ("Alex", "Horning", 13, null), ("Derek", "Chilson", 6, 1), ("Tamy", "Wilson", 9, 1), ("James", "Kennedy", 1, 1), ("Lizzy", "Nelson", 11, 1);
 
 SELECT * FROM department;
 

@@ -7,6 +7,16 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const db = mysql.createConnection(
+  {
+    host: "localhost",
+    user: process.env.DB_ROOT,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+  },
+  console.log(`connected to the employees_db database`)
+);
+
 inquirer
   .prompt([
     {
